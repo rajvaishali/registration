@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="" name="Formfill" onsubmit="return validation()">
+            <h1>Registration</h1>
+            <p id="result">head</p>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" id="fname" name="FullName" placeholder="Full Name" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-field">
+                    <input type="text" id="uname" name="Username"  placeholder="Username"required>
+                     <i class='bx bxs-user'></i>
+                </div>
+                
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="email" id="email" name="Email"  placeholder="Email" required>
+                    <i class='bx bxs-envelope' ></i>
+                </div>
+            <div class="input-field">
+                <input type="number" id="pnum" name="Phonenumber"  placeholder="Phone Number"required>
+                <i class='bx bxs-phone' ></i>
+            </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="password" id="pass"  name="Password" placeholder="Password" >
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+            <div class="input-field">
+                <input type="password" id="cpass" name="ConfirmPassword" placeholder="Confirm Password" >
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+            </div>
+            <div class="input-box">
+            <label for="Education">Education:</label>
+            <select id="Education">
+              <option value="">Please select one…</option>
+              <option value="Undegraduate">Undegraduate</option>
+              <option value="Graduate">Graduate</option>
+            </select>
+            <label for="Gender">Gender:</label>
+               <input type="radio" name="Gender"> Male
+               <input type="radio" name="Gender" checked>Female
+            </div>
+            <label ><input type="checkbox"> I hereby declare that the above information is ture and correct
+            </label>
+            <button type="submit"  class="btn">Register</button>
+           
+        </form>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
